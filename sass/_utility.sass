@@ -7,6 +7,8 @@
   background: $teal
 .bg-light-blue
   background: $light-blue
+.bg-steal-blue
+  background: $steal-blue
 .bg-orange
   background: $orange
 .bg-green
@@ -28,6 +30,8 @@
   color: $teal
 .color-light-blue
   color: $light-blue
+.color-steal-blue
+  color: $steal-blue
 .color-orange
   color: $orange
 .color-green
@@ -57,8 +61,27 @@
   height: 0.5rem
   &--blue
     background: $blue
+  &--green
+    background: $green
   &--sm
     width: 4rem
+
+// navigation
+nav
+  a.nav-link
+    background: $blue
+    color: $white
+    padding: 0.875rem
+    border-radius: 0.25rem
+    text-decoration: none
+    transition: all 300ms
+    &:hover
+      background: darken($blue, 10%)
+
+.footer-top
+  width: 100%
+  height: 0.5rem
+  background: $green
 
 // custom classes
 .home-hero-wrapper
@@ -75,8 +98,36 @@
   box-shadow: -1.5rem 1.5rem $blue
 .shadow-ccc
   box-shadow: 1.5rem 1.5rem $navy
+.shadow-brand
+  box-shadow: -1.5rem 1.5rem $navy
 
-.footer-top
-  width: 100%
-  height: 0.5rem
-  background: $green
+.icon
+  &.middle
+    vertical-align: middle
+  &--1
+    height: 1rem
+
+.border-r-025
+  border-radius: 0.25rem
+.border-r-05
+  border-radius: 0.5rem
+.border-r-075
+  border-radius: 0.75rem
+.border-r-1
+  border-radius: 1rem
+
+.m-b-05
+  margin-bottom: 0.5rem
+
+.ad-block-email
+  h4
+    border-left: 0.5rem solid $orange
+    padding-left: 1rem
+    font-size: 1.5rem
+    @media screen and (min-width: 752px)
+      font-size: 2rem
+  a
+    font-size: inherit
+    text-decoration: none
+    color: $orange
+    font-weight: 700
