@@ -126,6 +126,10 @@ img.border-white
   height: 5rem
 .height-6
   height: 6rem
+.height-7
+  height: 7rem
+.height-8
+  height: 8rem
 
 .border-r-025
   border-radius: 0.25rem
@@ -155,21 +159,10 @@ img.border-white
 .brand-img
   position: relative
   display: block
-  .logo-circle
-    background: $white
-    width: 10rem
-    height: 10rem
-    border-radius: 100%
-    position: absolute
-    left: 25%
-    top: 20%
-    z-index: 10
-    @media screen and (min-width: 752px)
-      left: 35%
-      top: 35%
   .brand-logo
     position: absolute
-    left: 0
+    margin-left: auto
+    margin-right: auto
     top: 35%
   .color-wrapper
     position: absolute
@@ -185,3 +178,17 @@ img.border-white
   img
     object-fit: cover
     max-height: 12rem
+
+.job-card
+  background: $white
+  border-radius: 1rem
+  border: 2px solid $steal-blue
+  a.apply-link
+    background: $orange
+    color: $white
+    padding: 0.5rem
+    border-radius: 0.25rem
+    transition: all 300ms
+    &:hover
+      cursor: pointer
+      background: darken($orange, 10%)
