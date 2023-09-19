@@ -155,6 +155,18 @@ img.border-white
 .brand-img
   position: relative
   display: block
+  .logo-circle
+    background: $white
+    width: 10rem
+    height: 10rem
+    border-radius: 100%
+    position: absolute
+    left: 25%
+    top: 20%
+    z-index: 10
+    @media screen and (min-width: 752px)
+      left: 35%
+      top: 35%
   .brand-logo
     position: absolute
     left: 0
@@ -164,6 +176,8 @@ img.border-white
     background: rgba($light-blue, 0.5)
     width: 100%
     height: 100%
+    &--navy
+      background: rgba($navy, 0.4)
     &:hover
       background: rgba($light-blue, 0.3)
 
